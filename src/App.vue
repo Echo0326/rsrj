@@ -5,12 +5,12 @@
 <script>
   import {reqSign_get} from './api/index'
   import moment from 'moment'
-export default {
-  name: 'App',
-  mounted(){
-    reqSign_get()
+  export default {
+    name: 'App',
+    mounted(){
+
+    }
   }
-}
 </script>
 
 <style scoped>
