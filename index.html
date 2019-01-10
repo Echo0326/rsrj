@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>V领地青年社区</title>
+    <link rel="icon" href="/static/images/vlinker.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/plugins/layer/theme/default/layer.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/static/plugins/fastclick.min.js"></script>
+    <script>
+      if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {FastClick.attach(document.body);}, false);
+      }
+      if(!window.Promise) {
+        document.writeln('<script src="/static/plugins/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+      }
+    </script>
+    <script type="text/javascript" src="/static/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/static/plugins/layer/layer.js"></script>
+  </body>
+</html>
