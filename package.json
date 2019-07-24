@@ -17,6 +17,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "blueimp-md5": "^2.10.0",
+    "element-ui": "^2.10.1",
     "iview": "^3.2.1",
     "moment": "^2.23.0",
     "pubsub-js": "^1.7.0",
@@ -31,6 +32,7 @@
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-jest": "^21.0.2",
     "babel-loader": "^7.1.1",
+    "babel-plugin-component": "^1.1.1",
     "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-import": "^1.11.0",
     "babel-plugin-syntax-jsx": "^6.18.0",

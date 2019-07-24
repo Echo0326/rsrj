@@ -6,7 +6,7 @@
   export default {
     name: 'App',
     mounted(){
-
+      console.log("父组件")
     }
   }
 </script>

@@ -9,11 +9,7 @@
   </head>
   <body>
     <div id="app"></div>
-    <script src="/static/plugins/fastclick.min.js"></script>
     <script>
-      if ('addEventListener' in document) {
-        document.addEventListener('DOMContentLoaded', function() {FastClick.attach(document.body);}, false);
-      }
       if(!window.Promise) {
         document.writeln('<script src="/static/plugins/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
       }
