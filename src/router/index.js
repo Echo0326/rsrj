@@ -9,6 +9,7 @@ import VueRouter from 'vue-router'
 //路由模块
 import Home from '../pages/home/Home'
 import Empty from '../pages/empty/Empty'
+import Father from '../pages/test-brother/father'
 
 //声明使用路由
 Vue.use(VueRouter);
@@ -30,6 +31,10 @@ export default new VueRouter({
       meta:{
         title:"抱歉,出错了,寻找不到页面",
       }
+    },
+    {
+      path:'/father',
+      component:Father
     },
     {
       path:'*',
