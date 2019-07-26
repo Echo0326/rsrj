@@ -10,7 +10,6 @@
 <script>
   import Vue from 'vue'
   import {InputNumber,Loading} from 'element-ui'
-  Vue.prototype.$loading=Loading.service
   export default {
     name: "testelement",
     components:{

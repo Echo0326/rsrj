@@ -15,15 +15,15 @@
     "uat": "cross-env NODE_ENV=uatTest env_config=uat node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "blueimp-md5": "^2.10.0",
     "element-ui": "^2.10.1",
     "iview": "^3.2.1",
     "moment": "^2.23.0",
     "pubsub-js": "^1.7.0",
-    "vue": "^2.5.2",
-    "vue-router": "^3.0.2",
-    "vuex": "^3.0.1"
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.7",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -81,10 +81,10 @@
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
-    "webpack": "^3.6.0",
-    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack": "^3.12.0",
+    "webpack-bundle-analyzer": "^2.13.1",
     "webpack-dev-server": "^2.11.5",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.2.1"
   },
   "engines": {
     "node": ">= 6.0.0",

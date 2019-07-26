@@ -2,11 +2,14 @@ import {BASE_API_URL} from './api.root.config'
 import md5 from 'blueimp-md5'
 import axios from 'axios'
 import qs from 'qs'
+import {Loading,Message} from 'element-ui'
 //request请求
 function request(url="", method="GET", data={},isLoading=false ) {
   return new Promise((resolve, reject) => {
-    let index,promise
-    if (isLoading){index = layer.load(2)}
+    let index,promise,loadingInstance
+    if (isLoading){
+      loadingInstance=Loading.service()
+    }
     if (method==="GET"){
       //get请求拼接字符串
       let dataStr = ''
@@ -28,7 +31,7 @@ function request(url="", method="GET", data={},isLoading=false ) {
       promise=axios.post(BASE_API_URL+url,qs.stringify(data))
     }
     promise.then(res => {
-      layer.close(index)
+      // loadingInstance.close();
       if (res.data.code===100){
         resolve(res.data)
       }else {
@@ -36,8 +39,8 @@ function request(url="", method="GET", data={},isLoading=false ) {
         reject(res)
       }
     }).catch(error => {
-      layer.close(index)
-      layer.msg("请求出错，请稍后再试！")
+      loadingInstance.close()
+      Message("请求出错，请稍后再试！")
       reject(error)
     })
   })
