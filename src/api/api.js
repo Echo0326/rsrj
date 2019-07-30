@@ -22,7 +22,7 @@ function request(url="", method="GET", data={},isLoading=false ) {
       if (res.data.code===100){
         resolve(res.data)
       }else if (res.data.msg) {
-        Message({message:res.data.msg,type:'error'})
+        Message({message:res.data.msg.toString(),type:'error'})
         reject(res.data)
       }else {
         Message({message:"请求出错，请稍后再试！",type:'error'})

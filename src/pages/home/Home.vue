@@ -10,6 +10,7 @@
 
 <script>
   import { Button } from 'iview';
+  import 'iview/dist/styles/iview.css'
   export default {
     name: "Home",
     data(){

@@ -9,9 +9,8 @@ import './filters'
 /*处理路由变化要做的事情*/
 import './router/router-change'
 /*挂载vue原型链上的属性*/
-import './vue-prototype'
+import './vue-prototype&component'
 /*挂载ui插件类*/
-import './vue-use-component'
 new Vue({
   el: "#app",
   render: h => h(App),
