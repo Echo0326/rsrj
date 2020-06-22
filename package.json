@@ -1,7 +1,7 @@
 {
-  "name": "vue2.0",
+  "name": "rsrj",
   "version": "1.0.0",
-  "description": "vlinker-vue",
+  "description": "rsrj-vue",
   "author": "Echo <395150457@qq.com>",
   "private": true,
   "scripts": {
@@ -18,7 +18,6 @@
     "axios": "^0.18.1",
     "blueimp-md5": "^2.10.0",
     "element-ui": "^2.10.1",
-    "iview": "^3.2.1",
     "moment": "^2.23.0",
     "pubsub-js": "^1.7.0",
     "vue": "^2.6.10",

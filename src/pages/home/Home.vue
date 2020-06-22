@@ -1,16 +1,11 @@
 <template>
   <div>
-    Home
-    <div>
-      {{t|formatDate}}
-    </div>
-    <Button>123</Button>
+    <Layout></Layout>
   </div>
 </template>
 
 <script>
-  import { Button } from 'iview';
-  import 'iview/dist/styles/iview.css'
+  import Layout from "../../components/Layout"
   export default {
     name: "Home",
     data(){
@@ -19,7 +14,7 @@
       }
     },
     components:{
-      Button
+      Layout
     }
   }
 </script>

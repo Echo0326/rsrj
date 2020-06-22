@@ -8,8 +8,12 @@ import VueRouter from 'vue-router'
 
 //路由模块
 import HomeRouter from '../pages/home/homeRouter'
+import ProductRouter from "../pages/product/productRoute"
+import ServiceRouter from "../pages/service/serviceRoute"
+import AboutUsRoute from "../pages/aboutUs/aboutUsRoute"
+import ContactUsRoute from "../pages/contactUs/contactUsRoute"
 import EmptyRouter from '../pages/empty/emptyRouter'
-import TestElement from '../pages/element/elementRouter'
+
 //声明使用路由
 Vue.use(VueRouter);
 
@@ -18,8 +22,11 @@ export default new VueRouter({
   mode: 'history',
   routes:[
     ...HomeRouter,
-    ...EmptyRouter,
-    ...TestElement
+    ...ProductRouter,
+    ...ServiceRouter,
+    ...AboutUsRoute,
+    ...ContactUsRoute,
+    ...EmptyRouter
   ],
   scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }
