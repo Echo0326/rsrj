@@ -45,24 +45,33 @@
       <div class="menu">
         <ul class="menulist">
           <li>
-            <span class="text">首页</span>
-            <div class="line"></div>
+            <router-link to="/home"><span class="text">首页</span>
+              <div class="line"></div>
+            </router-link>
           </li>
           <li>
-            <span class="text">产品展示</span>
-            <div class="line"></div>
+            <router-link to="/product">
+              <span class="text">产品展示</span>
+              <div class="line"></div>
+            </router-link>
           </li>
           <li>
-            <span class="text">服务流程</span>
-            <div class="line"></div>
+            <router-link to="/service">
+              <span class="text">服务流程</span>
+              <div class="line"></div>
+            </router-link>
           </li>
           <li>
-            <span class="text">关于我们</span>
-            <div class="line"></div>
+            <router-link to="aboutus">
+              <span class="text">关于我们</span>
+              <div class="line"></div>
+            </router-link>
           </li>
           <li>
-            <span class="text">联系我们</span>
-            <div class="line"></div>
+            <router-link to="contactus">
+              <span class="text">联系我们</span>
+              <div class="line"></div>
+            </router-link>
           </li>
         </ul>
         <i  @click="mobile=!mobile" class="fa fa-times close"  aria-hidden="true"></i>
