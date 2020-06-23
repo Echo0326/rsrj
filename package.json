@@ -15,6 +15,7 @@
     "uat": "cross-env NODE_ENV=uatTest env_config=uat node build/build.js"
   },
   "dependencies": {
+    "animate.css": "^4.1.0",
     "axios": "^0.18.1",
     "blueimp-md5": "^2.10.0",
     "element-ui": "^2.10.1",
