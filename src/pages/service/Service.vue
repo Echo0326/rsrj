@@ -119,11 +119,11 @@
         }
       },
       getOffsetTop(){
-        this.module2Top=$('.module2').offset().top-$('.module2').height()
-        this.module3Top=$('.module3').offset().top-$('.module3').height()
-        this.module4Top=$('.module4').offset().top-$('.module4').height()
-        this.module5Top=$('.module5').offset().top-$('.module5').height()
-        this.module6Top=$('.module6').offset().top-$('.module6').height()
+        this.module2Top=$('.module2').offset().top
+        this.module3Top=$('.module3').offset().top
+        this.module4Top=$('.module4').offset().top
+        this.module5Top=$('.module5').offset().top
+        this.module6Top=$('.module6').offset().top
       },
       onSroll(){
         $(window).scroll(()=> {
