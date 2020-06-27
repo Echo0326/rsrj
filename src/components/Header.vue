@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="header">
     <div class="pc">
       <div class="logo"><img src="./images/logo.png" alt=""></div>
       <div class="menu" >
@@ -37,52 +37,13 @@
       </div>
       <div class="menuIcon" ></div>
     </div>
-    <div class="mobile" :class="mobile?'on':''">
-      <div class="logo"><img src="./images/logo.png" alt=""></div>
-      <div class="menuIcon" @click="mobile=!mobile">
-        <i class="fa fa-bars fa-2x  " aria-hidden="true"></i>
-      </div>
-      <div class="menu">
-        <ul class="menulist">
-          <li>
-            <router-link to="/home"><span class="text">首页</span>
-              <div class="line"></div>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/product">
-              <span class="text">产品展示</span>
-              <div class="line"></div>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/service">
-              <span class="text">服务流程</span>
-              <div class="line"></div>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="aboutus">
-              <span class="text">关于我们</span>
-              <div class="line"></div>
-            </router-link>
-          </li>
-          <li>
-            <router-link to="contactus">
-              <span class="text">联系我们</span>
-              <div class="line"></div>
-            </router-link>
-          </li>
-        </ul>
-        <i  @click="mobile=!mobile" class="fa fa-times close"  aria-hidden="true"></i>
-      </div>
-    </div>
+    <div class="leftText">最值得信赖的专业信息化解决方案服务商</div>
   </div>
 </template>
 
 <script>
   export default {
-    name: "Layout",
+    name: "Header",
     data(){
       return{
         mobile:false
@@ -94,5 +55,5 @@
 </script>
 
 <style lang="less" scoped>
-  @import url('./less/layout');
+  @import url('less/header');
 </style>

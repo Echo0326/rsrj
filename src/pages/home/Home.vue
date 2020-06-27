@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Layout/>
+    <Header/>
   </div>
 </template>
 
 <script>
-  import Layout from "../../components/Layout"
+  import Header from "../../components/Header"
   export default {
     name: "Home",
     data(){
@@ -14,7 +14,7 @@
       }
     },
     components:{
-      Layout
+      Header
     }
   }
 </script>

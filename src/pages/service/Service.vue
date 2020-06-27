@@ -1,8 +1,7 @@
 <template>
   <div>
-    <Layout/>
+    <Header/>
     <div ref="service" class="service">
-      <div class="leftText">最值得信赖的专业信息化解决方案服务商</div>
       <ul class="rightIcon">
         <li :class="index===1?'on':''"></li>
         <li :class="index===2?'on':''"></li>
@@ -14,7 +13,7 @@
       <div class="module module1" style="opacity: 1">
         <div class="left">
           <div class="title animated bounceInUp">需求沟通</div>
-          <div class="text animated bounceInUp">倾听客户需求，了解用户使用环境和操作流程，双方进行项目可行性方案研究，在这个过程中将协助用户进行整个网站定位和策划；积极投入到整个项目的开发过程中去。</div>
+          <div class="text animated bounceInUp">倾听客户需求，深入了解客户所需要的产品定位以及详细的功能需求。结合用户需求、自身行业经验和参考网站制定出网站建设方案，双方进行项目可行性研究，在这个过程中荣硕软件将协助用户进行整个项目定位和策划；积极投入到整个项目的开发过程中去。</div>
           <div class="btn animated bounceInUp" @click="nextStep(2)">下一步</div>
         </div>
         <div class="right">
@@ -34,7 +33,7 @@
       <div class="module module3">
         <div class="left">
           <div class="title animated">产品设计</div>
-          <div class="text animated">设计书对界面进行总体设计，客户确定满意设计方案后，交付研发团队，进入下一阶段。</div>
+          <div class="text animated">产品团队和设计团队针对项目进行产品原型设计、UI设计和视觉设计，设计团队对界面进行总体设计，客户确定满意设计方案后，交付研发团队，进入下一阶段。</div>
           <div class="btn animated" @click="nextStep(4)">下一步</div>
         </div>
         <div class="right">
@@ -54,7 +53,7 @@
       <div class="module module5" >
         <div class="left">
           <div class="title animated">测试反馈</div>
-          <div class="text animated">测试编写好的系统。交给用户使用，用户使用后一个一个的确认每个功能。</div>
+          <div class="text animated">软件测试工程师在对产品测试达到要求后，编写好系统测试文档。交给用户使用测试，用户使用后一个一个的确认每个功能，根据用户测试反馈，修改调整规范完善。</div>
           <div class="btn animated" @click="nextStep(6)">下一步</div>
         </div>
         <div class="right">
@@ -64,7 +63,7 @@
       <div class="module module6">
         <div class="left">
           <div class="title animated">交付上线</div>
-          <div class="text animated">在软件测试证明软件达到要求后，对客户进行一对一的培训交付使用。</div>
+          <div class="text animated">在软件测试证明软件达到要求后，对客户进行一对一的培训交付使用，长期售后维护。</div>
 <!--          <div class="btn">下一步</div>-->
         </div>
         <div class="right">
@@ -76,14 +75,14 @@
 </template>
 
 <script>
-  import Layout from "../../components/Layout"
-  import $ from 'jquery'
+  import Header from "../../components/Header"
 
   export default {
     name: "Service",
     data(){
       return{
         index:1,
+        module1Top:'',
         module2Top:'',
         module3Top:'',
         module4Top:'',
@@ -92,7 +91,7 @@
       }
     },
     components:{
-      Layout
+      Header
     },
     mounted() {
       this.$nextTick(()=>{
@@ -119,6 +118,7 @@
         }
       },
       getOffsetTop(){
+        this.module1Top=$('.module1').offset().top
         this.module2Top=$('.module2').offset().top
         this.module3Top=$('.module3').offset().top
         this.module4Top=$('.module4').offset().top
@@ -128,28 +128,28 @@
       onSroll(){
         $(window).scroll(()=> {
           let wtop=$(window).scrollTop()
-          if (wtop<this.module2Top){
-            this.index=1
-          }else if (this.module2Top<wtop && wtop<this.module3Top){
-            $('.module2').css({opacity:1})
-            $('.module2 .animated').addClass('bounceInUp')
-            this.index=2
-          }else if (this.module3Top<wtop && wtop<this.module4Top){
-            $('.module3').css({opacity:1})
-            $('.module3 .animated').addClass('bounceInUp')
-            this.index=3
-          }else if (this.module4Top<wtop && wtop<this.module5Top){
-            $('.module4').css({opacity:1})
-            $('.module4 .animated').addClass('bounceInUp')
-            this.index=4
-          }else if (this.module5Top<wtop && wtop<this.module6Top){
-            $('.module5').css({opacity:1})
-            $('.module5 .animated').addClass('bounceInUp')
-            this.index=5
-          }else{
+          if (wtop>=this.module6Top){
             $('.module6').css({opacity:1})
             $('.module6 .animated').addClass('bounceInUp')
             this.index=6
+          }else if (wtop>=this.module5Top){
+            $('.module5').css({opacity:1})
+            $('.module5 .animated').addClass('bounceInUp')
+            this.index=5
+          }else if (wtop>=this.module4Top){
+            $('.module4').css({opacity:1})
+            $('.module4 .animated').addClass('bounceInUp')
+            this.index=4
+          }else if (wtop>=this.module3Top){
+            $('.module3').css({opacity:1})
+            $('.module3 .animated').addClass('bounceInUp')
+            this.index=3
+          }else if (wtop>=this.module2Top){
+            $('.module2').css({opacity:1})
+            $('.module2 .animated').addClass('bounceInUp')
+            this.index=2
+          }else if (wtop>=this.module1Top){
+            this.index=1
           }
         })
       }
