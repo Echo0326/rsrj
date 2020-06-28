@@ -27,7 +27,7 @@
           <div class="btn animated" @click="nextStep(3)">下一步</div>
         </div>
         <div class="right">
-          <img class="img" src="./images/service-img1.png" alt="">
+          <img class="img" src="./images/service-img2.png" alt="">
         </div>
       </div>
       <div class="module module3">
@@ -37,7 +37,7 @@
           <div class="btn animated" @click="nextStep(4)">下一步</div>
         </div>
         <div class="right">
-          <img class="img" src="./images/service-img1.png" alt="">
+          <img class="img" src="./images/service-img3.png" alt="">
         </div>
       </div>
       <div class="module module4" >
@@ -47,7 +47,7 @@
           <div class="btn animated" @click="nextStep(5)">下一步</div>
         </div>
         <div class="right">
-          <img class="img" src="./images/service-img1.png" alt="">
+          <img class="img" src="./images/service-img4.png" alt="">
         </div>
       </div>
       <div class="module module5" >
@@ -57,7 +57,7 @@
           <div class="btn animated" @click="nextStep(6)">下一步</div>
         </div>
         <div class="right">
-          <img class="img" src="./images/service-img1.png" alt="">
+          <img class="img" src="./images/service-img5.png" alt="">
         </div>
       </div>
       <div class="module module6">
@@ -67,7 +67,7 @@
 <!--          <div class="btn">下一步</div>-->
         </div>
         <div class="right">
-          <img class="img" src="./images/service-img1.png" alt="">
+          <img class="img" src="./images/service-img6.png" alt="">
         </div>
       </div>
     </div>
