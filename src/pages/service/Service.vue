@@ -75,7 +75,7 @@
 </template>
 
 <script>
-  import Header from "../../components/Header"
+  import Header from "../../components/header/Header"
 
   export default {
     name: "Service",
@@ -118,16 +118,17 @@
         }
       },
       getOffsetTop(){
-        this.module1Top=$('.module1').offset().top
-        this.module2Top=$('.module2').offset().top
-        this.module3Top=$('.module3').offset().top
-        this.module4Top=$('.module4').offset().top
-        this.module5Top=$('.module5').offset().top
-        this.module6Top=$('.module6').offset().top
+        this.module1Top=$('.module1').offset().top-$('.module1').height()
+        this.module2Top=$('.module2').offset().top-$('.module2').height()
+        this.module3Top=$('.module3').offset().top-$('.module3').height()
+        this.module4Top=$('.module4').offset().top-$('.module4').height()
+        this.module5Top=$('.module5').offset().top-$('.module5').height()
+        this.module6Top=$('.module6').offset().top-$('.module6').height()
       },
       onSroll(){
         $(window).scroll(()=> {
           let wtop=$(window).scrollTop()
+          this.getOffsetTop()
           if (wtop>=this.module6Top){
             $('.module6').css({opacity:1})
             $('.module6 .animated').addClass('bounceInUp')

@@ -55,5 +55,5 @@
 </script>
 
 <style lang="less" scoped>
-  @import url('less/header');
+  @import url('./less/header');
 </style>
