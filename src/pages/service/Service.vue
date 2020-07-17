@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header/>
     <div ref="service" class="service">
       <ul class="rightIcon">
         <li :class="index===1?'on':''"></li>
@@ -75,8 +74,6 @@
 </template>
 
 <script>
-  import Header from "../../components/header/Header"
-
   export default {
     name: "Service",
     data(){
@@ -89,9 +86,6 @@
         module5Top:'',
         module6Top:''
       }
-    },
-    components:{
-      Header
     },
     mounted() {
       this.$nextTick(()=>{

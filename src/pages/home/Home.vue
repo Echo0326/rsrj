@@ -1,88 +1,54 @@
 <template>
   <div>
-    <Header/>
     <div class="banner">
       <img class="img" src="./images/home-banner.png" alt="">
       <div class="text animated bounceInUp">
-        <div class="h1">专业铸就精品，责任成就双赢</div>
-        <div class="sogn">我们从不说自己是最顶尖的开发供应商 <br>
-          但我们对自己的要求是做到最好</div>
+        <div class="h1">以客户体验为核心 开拓知识创新之路</div>
+        <div class="sogn">打造行业品牌，树立企业形象 <br>
+          为客户提供更好的一站式互联网解决方案。</div>
         <div class="gaoxiao">高效的开发团队 ，一对一定制服务</div>
         <div class="btn">
           <div class="btn1">了解下公司</div>
-          <div class="btn2">谈个需求</div>
         </div>
       </div>
     </div>
     <div class="programme">
       <div class="title">解决方案<br><span>专业的智慧+解决方案服务商</span></div>
       <div class="lunbo">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="item">
-                <img class="img" src="./images/home-fangan-img1.png" alt="">
-                <div class="h1">
-                  基于实现人脸识别技术最优方案
-                </div>
-                <div class="txt">
-                  零基础体验AI开发，快速构建人脸识别应用,零基础体验AI开发，快速构建人脸识别应用,零基础体验AI开发，快速构建人脸识别应用.
-                </div>
-                <div class="seeDetail">
-                  查看详情
-                  <img class="arrow" src="./images/home-arrow.png" alt="">
-                </div>
-                <div class="bgon"></div>
-              </div>
+        <div class="slide">
+          <div class="item">
+            <img class="img" src="./images/home-fangan-img1.jpg" alt="">
+            <div class="h1">
+              人脸识别解决方案
             </div>
-            <div class="swiper-slide">
-              <div class="item">
-                <img class="img" src="./images/home-fangan-img1.png" alt="">
-                <div class="h1">
-                  基于实现人脸识别技术最优方案
-                </div>
-                <div class="txt">
-                  零基础体验AI开发，快速构建人脸识别应用,零基础体验AI开发，快速构建人脸识别应用,零基础体验AI开发，快速构建人脸识别应用.
-                </div>
-                <div class="seeDetail">
-                  查看详情
-                  <img class="arrow" src="./images/home-arrow.png" alt="">
-                </div>
-                <div class="bgon"></div>
-              </div>
+            <div class="txt">
+              基于目前最先进的人脸识别技术为核心，实现道闸人脸识别、智慧考勤、会议室预定、校园安全识别等多场景应用的技术。
             </div>
-            <div class="swiper-slide">
-              <div class="item">
-                <img class="img" src="./images/home-fangan-img1.png" alt="">
-                <div class="h1">
-                  基于实现人脸识别技术最优方案
-                </div>
-                <div class="txt">
-                  零基础体验AI开发，快速构建人脸识别应用,零基础体验AI开发，快速构建人脸识别应用,零基础体验AI开发，快速构建人脸识别应用.
-                </div>
-                <div class="seeDetail">
-                  查看详情
-                  <img class="arrow" src="./images/home-arrow.png" alt="">
-                </div>
-                <div class="bgon"></div>
-              </div>
+            <div class="bgon"></div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="item">
+            <img class="img" src="./images/home-fangan-img2.jpg" alt="">
+            <div class="h1">
+              办公自动化解决方案
             </div>
-            <div class="swiper-slide">
-              <div class="item" >
-                <img class="img" src="./images/home-fangan-img1.png" alt="">
-                <div class="h1">
-                  基于实现人脸识别技术最优方案
-                </div>
-                <div class="txt">
-                  零基础体验AI开发，快速构建人脸识别应用,零基础体验AI开发，快速构建人脸识别应用,零基础体验AI开发，快速构建人脸识别应用.
-                </div>
-                <div class="seeDetail">
-                  查看详情
-                  <img class="arrow" src="./images/home-arrow.png" alt="">
-                </div>
-                <div class="bgon"></div>
-              </div>
+            <div class="txt">
+              利用先进的技术，使人的各种办公业务活动逐步由各种设备、各种人机信息系统协助完成，提供一个协同、集成的办公环境，提高工作工作效率和工作质量。
             </div>
+            <div class="bgon"></div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="item">
+            <img class="img" src="./images/home-fangan-img3.jpg" alt="">
+            <div class="h1">
+              智慧消防云平台解决方案
+            </div>
+            <div class="txt">
+              基于若干智能硬件而开发的，集成设备监测、报警、巡检、大屏展示、故障推送、隐患曝光等功能于一体的消防监控平台。
+            </div>
+            <div class="bgon"></div>
           </div>
         </div>
       </div>
@@ -93,34 +59,29 @@
         <div class="title">我们能做什么？<br>让您的需求快速变成现实</div>
         <ul class="wecanlist">
           <li>
-            <img class="icon" src="./images/home-nengzuo-img1.png" alt="">
+            <img class="icon" src="./images/home-wecan-img1.png" alt="">
             <div class="biaoti">ERP管理系统定制</div>
             <div class="txt">基于iOS/Android应用开发,掌控智能终端时代。</div>
-            <div class="seeDetil">查看详情 ></div>
           </li>
           <li>
-            <img class="icon" src="./images/home-nengzuo-img1.png" alt="">
-            <div class="biaoti">ERP管理系统定制</div>
-            <div class="txt">基于iOS/Android应用开发,掌控智能终端时代。</div>
-            <div class="seeDetil">查看详情 ></div>
+            <img class="icon" src="./images/home-wecan-img2.png" alt="">
+            <div class="biaoti">微信二次开发</div>
+            <div class="txt">酷炫模板,全新体验,轻松走入微信。</div>
           </li>
           <li>
-            <img class="icon" src="./images/home-nengzuo-img1.png" alt="">
-            <div class="biaoti">ERP管理系统定制</div>
-            <div class="txt">基于iOS/Android应用开发,掌控智能终端时代。</div>
-            <div class="seeDetil">查看详情 ></div>
+            <img class="icon" src="./images/home-wecan-img3.png" alt="">
+            <div class="biaoti">高端网站建设</div>
+            <div class="txt">企业高端定制网站设计,彰显品牌形象。</div>
           </li>
           <li>
-            <img class="icon" src="./images/home-nengzuo-img1.png" alt="">
-            <div class="biaoti">ERP管理系统定制</div>
-            <div class="txt">基于iOS/Android应用开发,掌控智能终端时代。</div>
-            <div class="seeDetil">查看详情 ></div>
+            <img class="icon" src="./images/home-wecan-img4.png" alt="">
+            <div class="biaoti">移动WEB开发</div>
+            <div class="txt">定制手机网站和微网站制作,布局移动互联网。</div>
           </li>
           <li>
-            <img class="icon" src="./images/home-nengzuo-img1.png" alt="">
-            <div class="biaoti">ERP管理系统定制</div>
-            <div class="txt">基于iOS/Android应用开发,掌控智能终端时代。</div>
-            <div class="seeDetil">查看详情 ></div>
+            <img class="icon" src="./images/home-wecan-img5.png" alt="">
+            <div class="biaoti">界面品牌建设</div>
+            <div class="txt">以专业的视角为企业提供有创意和视觉冲击力的设计,致力于树立良好的企业品牌形象。</div>
           </li>
         </ul>
       </div>
@@ -148,23 +109,19 @@
         <div class="title">我们的服务</div>
         <div class="txt">
           <ul class="weserver">
-            <li>业务咨询</li>
-            <li>售后服务</li>
-            <li>业务咨询</li>
-            <li>售后服务</li>
+            <li>微信二次开发</li>
+            <li>ERP管理系统定制</li>
+            <li>高端网站建设</li>
+            <li>移动WEB开发</li>
+            <li>界面品牌建设</li>
           </ul>
         </div>
       </li>
     </ul>
-    <Footer></Footer>
   </div>
 </template>
 
 <script>
-  import Header from "../../components/header/Header"
-  import Footer from '../../components/footer/Footer'
-  import Swiper from 'swiper'
-  import 'swiper/css/swiper.min.css'
   export default {
     name: "Home",
     data(){
@@ -172,27 +129,12 @@
         activeIndex:4
       }
     },
-    components:{
-      Header,
-      Footer
-    },
+
     mounted(){
-      this.swiper()
+
     },
     methods:{
-      swiper(){
-        this.$nextTick(()=>{
-          var mySwiper = new Swiper ('.swiper-container', {
-            loop: true, // 循环模式选项
-            slidesPerView: 4,
-            spaceBetween: 50,
-            centeredSlides: true,
-            autoplay: {
-              disableOnInteraction: false,
-            },
-          })
-        })
-      }
+
     }
   }
 </script>
